@@ -67,7 +67,7 @@ function masonryRender() {
 
     function xhr(inputValue) {
         var request;
-        var url = "https://pixabay.com/api/?key=3531240-ec0d55581e7ceac4acc8e28c0&image_type=photo&pretty=true&per_page=7&orientation=horizontal&q=" + inputValue;
+        var url = "https://pixabay.com/api/?key=2736831-b44f771913afeabeecf3e334d&image_type=photo&pretty=true&per_page=7&orientation=horizontal&q=" + inputValue;
 
         if (window.XMLHttpRequest) {
             request = new XMLHttpRequest();
