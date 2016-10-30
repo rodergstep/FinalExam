@@ -25,7 +25,7 @@ function masonryRender() {
     var masonryOptions = new Masonry(msnry, {
         itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',
-        gutter: 10,
+        gutter: 19,
         percentPosition: true
     });
 
@@ -53,13 +53,11 @@ function masonryRender() {
         var items = document.getElementsByClassName("grid-item");
 
         for (var i = 0; i < data.hits.length; i++) {
-            // add photos to masonry layout
+
             items[i].style.background = "url('" + data.hits[i].webformatURL + "') no-repeat center center";
             items[i].style.backgroundSize = "cover";
 
-            // here we also must add text
             items[i].childNodes[0].childNodes[0].innerHTML = data.hits[i].tags;
-            // after text added top property must be calculated and set
             items[i].childNodes[0].childNodes[0].style.top = (items[i].offsetHeight - items[i].childNodes[0].childNodes[0].offsetHeight) / 2 + "px";
         }
 

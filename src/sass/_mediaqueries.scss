@@ -1,0 +1,320 @@
+@media screen and (max-width: 960px) {
+    .wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .header {
+        &__logo {
+            margin-left: 5.3%;
+        }
+
+        &__enter {
+            margin-right: 5.3%;
+        }
+
+        &__login {
+            margin-right: 16px;
+        }
+
+        .header__signup {
+            margin-right: 0;
+        }
+    }
+
+    .promo__text {
+        margin-left: -3px;
+    }
+
+    .sliders {
+        .section-title {
+            margin-left: 5px;
+        }
+    }
+
+    .slider__nav {
+        top: 10%;
+    }
+
+    #sliderFrame2 {
+        .slider__nav--prev {
+            left: 12px;
+        }
+
+        .slider__nav--next {
+            right: 12px;
+        }
+
+        .slider__text {
+            margin-left: 4px;
+        }
+    }
+
+    #sliderFrame3 {
+        .slider {
+            &__nav--prev {
+                left: 24px;
+            }
+
+            &__step {
+                padding-top: 7px;
+                margin-left: 4px;
+            }
+
+            &__caption {
+                margin-left: 3px;
+            }
+        }
+    }
+
+    .partner {
+        width: 30%;
+        margin-right: 0;
+
+        .partner__story {
+            width: 220px;
+            margin: 0 auto;
+        }
+    }
+
+    .partner--1 {
+        margin-left: 18%;
+    }
+
+    .partner--2 {
+        margin-left: 4.3%;
+    }
+
+    .partner--3 {
+        margin-left: 18%;
+        margin-top: 55px;
+    }
+
+    .partner--4 {
+        margin-left: 4.3%;
+        margin-top: 55px;
+    }
+
+    .grid-item,
+    .grid-sizer {
+        width: 31.5%;
+    }
+
+    .grid-item--dblwidth {
+        width: 65%;
+    }
+
+    .footer {
+        footer {
+            padding-right: 4%;
+            padding-left: 4%;
+        }
+
+        &__menu {
+            margin-left: 12.5%;
+            margin-right: 15%;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .promo {
+        height: 540px;
+
+        .wrapper {
+            padding: 0;
+        }
+    }
+
+    .header {
+        padding-top: 20px;
+
+        &__logo {
+            float: none;
+            margin: 0 auto;
+        }
+
+        h1 {
+            position: absolute;
+            width: 100%;
+            top: 167px;
+        }
+
+        &__enter {
+            float: none;
+            margin-right: 0;
+        }
+
+        &__signup {
+            height: 33px;
+        }
+    }
+
+    .promo__text {
+        margin-left: 0;
+        margin-top: 168px;
+
+        &__title {
+            font-size: 30px;
+
+            span {
+                margin-top: 6px;
+            }
+        }
+
+        &__sbt {
+            width: 70%;
+            margin: 17px auto 19px;
+            font-size: 18px;
+        }
+
+        &__find {
+            width: 278px;
+        }
+    }
+
+    .sliders {
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        margin: 37px 0 17px;
+    }
+
+    .slider {
+        float: none;
+        height: 240px;
+        width: 100%;
+        margin: 10px 0 0;
+    }
+
+    #sliderFrame2 {
+        margin: 10px 0 0;
+
+        .slider__text {
+            margin-left: 0;
+        }
+    }
+
+    #sliderFrame3 {
+        .slider {
+            &__caption {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .partners {
+        .section-title {
+            margin: 35px 0 20px -7px;
+            line-height: 25px;
+        }
+
+        .partner {
+            width: 100%;
+            margin: 0 auto 26px;
+
+            &__name {
+                margin: 18px 0 14px;
+            }
+
+            &--4 {
+                .partner__name {
+                    margin: 23px 0 15px -6px;
+                }
+            }
+        }
+
+        .partners__other {
+            margin: 0 auto;
+            width: 280px;
+        }
+    }
+
+    .section-title--ideas {
+        line-height: 25px;
+    }
+
+    .grid-item,
+    .grid-sizer {
+        width: 100%;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    .grid-item--dblwidth {
+        width: 100%;
+    }
+
+    .section-title--search {
+        margin: 25px 0 15px -3px;
+        line-height: 25px;
+    }
+
+    .search__question {
+        margin-bottom: 18px;
+    }
+
+    .search__field {
+        width: 261px;
+        margin-bottom: 10px;
+    }
+
+    .search__btn {
+        width: 280px;
+    }
+
+    .search__container {
+        margin-bottom: 41px;
+    }
+
+    .footer {
+        footer {
+            padding: 0;
+            margin-top: 17px;
+        }
+
+        &__item {
+            float: none;
+        }
+
+        &__title {
+            margin-bottom: 6px;
+            margin-left: -15px;
+        }
+
+        &__menu {
+            margin: 15px 0 0;
+            padding: 0 13% 0 17%;
+
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            li {
+                float: left;
+                margin-right: 14px;
+            }
+        }
+
+        &__partners {
+            margin-top: 6px;
+
+            .footer__title {
+                margin-left: -3px;
+            }
+        }
+
+        &__author {
+            margin: 15px auto 0;
+            float: none;
+
+            p {
+                margin-top: 18px;
+                text-align: center;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}

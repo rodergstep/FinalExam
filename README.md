@@ -1,2 +1,2 @@
 # FinalExam
-FinalExam for GoIT.
+FinalExam for GoIT

@@ -32,11 +32,12 @@ section {
 }
 
 .header {
-	padding-top: 40px;
+	padding-top: 36px;
 	line-height: 36px;
 
 	&__logo {
 		float: left;
+		margin-top: 8px;
 
 		img {
 			width: 178px;
@@ -55,19 +56,20 @@ section {
 		float: right;
 	}
 
-	.header__login {
+	&__login {
 		display: inline-block;
-		margin-right: 20px;
+		margin-right: 15px;
 
 		&:hover a {
 			color: $tomato;
 		}
 	}
 
-	.header__signup {
+	&__signup {
 		display: inline-block;
-		width: 90px;
-		height: 36px;
+		margin-right: 2px;
+		width: 86px;
+		height: 35px;
 		text-align: center;
 		border: 2px solid white;
 		border-radius: 18px;
@@ -79,7 +81,7 @@ section {
 }
 
 .promo__text {
-	margin: 180px auto 0;
+	margin: 140px auto 0;
 	text-align: center;
 
 	&__title {
@@ -90,12 +92,12 @@ section {
 
 		span {
 			display: block;
-			margin-top: 15px;
+			margin-top: 10px;
 		}
 	}
 
 	&__sbt {
-		margin: 30px 0 40px;
+		margin: 32px 0 37px;
 		font-family: Roboto;
 		font-size: 24px;
 		font-weight: 300;
@@ -123,7 +125,7 @@ section {
 // BEGIN OF SLIDERS
 
 .section-title {
-	margin: 97px 0 37px;
+	margin: 97px 0 37px -4px;
 	color: $headtext;
 	font-family: Montserrat;
 	font-size: 22px;
@@ -139,11 +141,10 @@ section {
 
 .slider {
 	float: left;
-	width: 300px;
+	width: 32%;
 	height: 400px;
 	position: relative;
 	margin: 0 auto;
-	background-color: #ff8523;
 	border-radius: 4px;
 	box-sizing: border-box;
 	overflow: hidden;
@@ -171,8 +172,9 @@ section {
 
 	&__step {
 		display: block;
-		width: 70px;
-		padding: 5px 0;
+		width: 68px;
+		height: 13px;
+		padding: 5px 0 0 2px;
 		margin-left: 2px;
 		color: white;
 		letter-spacing: 2px;
@@ -186,7 +188,7 @@ section {
 	}
 
 	&__title {
-		margin: 15px 0 18px;
+		margin: 15px 0 12px;
 		line-height: 30px;
 		font-family: Montserrat;
 		font-size: 24px;
@@ -198,20 +200,21 @@ section {
 		font-family: Roboto;
 		font-size: 14px;
 		font-weight: 300;
+		line-height: 16px;
 	}
 }
 
 #slider1,
 #slider2,
 #slider3 {
-	width: 300px;
+	width: 100%;
 	height: 400px;
 	margin: 0 auto;
 	transform: translate3d(0,0,0);
 }
 
 #sliderFrame2 {
-	margin: 0 20px;
+	margin: 0 2%;
 }
 
 .slider__nav {
@@ -244,24 +247,17 @@ section {
 }
 // END OF SLIDERS
 /*--BEGIN OF THE PARTNERS--*/
+.partners__container {
+	margin-top: -4px;
+}
+
 .partner {
 	float: left;
-	margin-right: 25px;
+	width: 23.5%;
+	margin-right: 2%;
 
-	&--1 {
-		width: 194px;
-	}
-
-	&--2 {
-		width: 211px;
-	}
-
-	&--3 {
-		width: 217px;
-	}
-
-	&--4 {
-		width: 194px;
+	&:last-child {
+		margin-right: 0;
 	}
 
 	&__photo {
@@ -293,7 +289,7 @@ section {
 		width: 40px;
 		height: 40px;
 		position: absolute;
-		right: -5px;
+		right: -4px;
 		bottom: -5px;
 		border: 4px solid white;
 		border-radius: 50%;
@@ -308,7 +304,7 @@ section {
 		&--2 {
 			background-color: #1cd7ad;
 			@include sprite-image($partner-icon2);
-			background-position: -61px -67px;
+			background-position: -60px -65px;
 		}
 
 		&--3 {
@@ -320,7 +316,7 @@ section {
 		&--4 {
 			background-color: #4e73db;
 			@include sprite-image($partner-icon4);
-			background-position: -98px -101px;
+			background-position: -98px -100px;
 		}
 	}
 	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -346,7 +342,7 @@ section {
 	}
 
 	&__name {
-		margin: 25px 0 22px;
+		margin: 19px 0 16px;
 		color: $headtext;
 		font-family: Montserrat;
 		font-size: 14px;
@@ -354,6 +350,8 @@ section {
 	}
 
 	&__story {
+		line-height: 17px;
+		letter-spacing: 0.2px;
 		color: #666;
 		font-family: Roboto;
 		font-size: 14px;
@@ -363,22 +361,85 @@ section {
 
 .partners__other {
 	display: block;
-	margin: 40px auto 0;
-	width: 192px;
-	height: 40px;
-	line-height: 40px;
+	margin: 36px auto 2px;
+	width: 191px;
+	height: 39px;
+	line-height: 37px;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 700;
 	color: $tomato;
 	border: 2px solid $tomato;
 	border-radius: 20px;
+	box-sizing: border-box;
 
 	&:hover {
 		color: $headtext;
 	}
 }
 /*--END OF THE PARTNERS--*/
+/*--BEGIN OF THE MASONRY--*/
+.grid {
+	// box-sizing: border-box;
+	width: 100% !important;
+}
+
+.grid-item,
+.grid-sizer {
+	width: 32%;
+	content: "";
+	// display: table;
+	clear: both;
+	box-sizing: border-box;
+}
+
+.grid-item {
+	float: left;
+	height: 310px;
+	margin-bottom: 20px;
+	background-color: $headtext;
+	border-radius: 4px;
+	border: none;
+	overflow: hidden;
+	opacity: 0.8;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	&--dblwidth {
+		width: 66%;
+	}
+
+	div {
+		position: relative;
+		width: 100%;
+		height: 100%;
+
+		a {
+			position: absolute;
+			width: 80%;
+			top: 46% !important;
+			left: 0;
+			padding-left: 10%;
+			padding-right: 10%;
+			color: white;
+			font-size: 22px;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 700;
+			text-transform: capitalize;
+		}
+	}
+}
+/*--END OF THE MASONRY--*/
 /*--BEGIN OF THE SEARCH--*/
+.section-title--search {
+	margin-top: 77px;
+}
+
 .search__question {
-	margin-bottom: 42px;
+	margin-bottom: 38px;
+	margin-left: -4px;
 	color: $headtext;
 	font-family: Roboto;
 	font-size: 18px;
@@ -386,13 +447,13 @@ section {
 }
 
 .search__container {
-	margin-bottom: 100px;
+	margin-bottom: 101px;
 }
 
 .search__field {
-	width: 240px;
-	height: 40px;
-	margin-right: 10px;
+	width: 224px;
+	height: 35px;
+	margin-right: 5px;
 	padding-left: 15px;
 	outline: none;
 	border: 1px solid #ccc;
@@ -432,24 +493,24 @@ section {
 	border-top: 4px solid $tomato;
 
 	footer {
-		margin: 40px 0;
+		margin: 38px 0;
 	}
 
 	&__item {
 		float: left;
-		margin-right: 100px;
 	}
 
 	&__logo {
-		color: #ff4e50;
+		color: $tomato;
 		font-family: Montserrat;
 		font-size: 16px;
 		font-weight: 700;
 		text-transform: uppercase;
+		letter-spacing: 0.6px;
 	}
 
 	&__title {
-		margin-bottom: 20px;
+		margin-bottom: 16px;
 		color: $headtext;
 		font-family: Montserrat;
 		font-size: 14px;
@@ -457,8 +518,11 @@ section {
 	}
 
 	&__menu {
+		margin-left: 10.5%;
+		margin-right: 10%;
+
 		li a {
-			margin-bottom: 15px;
+			margin-bottom: 10px;
 			text-align: left;
 			display: block;
 			color: #666;
@@ -484,6 +548,7 @@ section {
 			font-size: 10px;
 			font-weight: 700;
 			text-transform: uppercase;
+			letter-spacing: 1px;
 		}
 
 		img {
@@ -491,84 +556,6 @@ section {
 			height: 24px;
 		}
 	}
-
-	&__logo {}
 }
 /*--END OF THE FOOTER--*/
-/*--BEGIN OF THE MASONRY--*/
-.grid {
-	max-width: 940px;
-	box-sizing: border-box;
-}
-
-.grid-item,
-.grid-sizer {
-	width: 32.6%;
-	box-sizing: border-box;
-}
-
-.grid-item {
-	height: 300px;
-	float: left;
-	border-radius: 5px;
-	box-sizing: border-box;
-	margin-bottom: 10px;
-	border: none;
-	overflow: hidden;
-
-	&--dblwidth {
-		width: 66.2%;
-		box-sizing: border-box;
-	}
-
-	div {
-		position: relative;
-		width: 100%;
-		height: 100%;
-		padding: 0;
-		margin: 0;
-		background-color: rgba(0, 0, 0, 0.2);
-
-		a {
-			position: absolute;
-			left: 0;
-			color: white;
-			font-size: 22px;
-			width: 72%;
-			padding-left: 14%;
-			padding-right: 14%;
-			text-transform: capitalize;
-			font-family: 'Montserrat', sans-serif;
-			font-weight: 700;
-		}
-	}
-}
-@media screen and (max-width: 960px) {
-	.grid-item,
-	.grid-sizer {
-		width: 32.42%;
-		box-sizing: border-box;
-	}
-
-	.grid-item--dblwidth {
-		width: 66.3%;
-		box-sizing: border-box;
-	}
-}
-@media screen and (max-width: 768px) {
-	.grid-item,
-	.grid-sizer {
-		width: 100%;
-		box-sizing: border-box;
-	}
-
-	.grid-item--dblwidth {
-		width: 100%;
-		box-sizing: border-box;
-	}
-}
-@media screen and (max-width: 480px) {
-	.grid-item {
-		height: 115px;
-	}
-}
+@import "mediaqueries";
