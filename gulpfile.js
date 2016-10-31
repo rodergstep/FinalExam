@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     spritesmith = require('gulp.spritesmith');
-    plumber = require('gulp-plumber'),
+plumber = require('gulp-plumber'),
     watch = require('gulp-watch'),
     autoprefixer = require('gulp-autoprefixer'),
     prettify = require('gulp-prettify'),
@@ -73,7 +73,8 @@ gulp.task('style:build', function() {
         .pipe(plumber())
         .pipe(sass())
         .pipe(autoprefixer({
-            browsers: ['last 30 versions']
+            browsers: ['last 30 versions', 'ie >= 8'],
+            cascade: false
         }))
         .pipe(cssmin())
         .pipe(rename({
@@ -121,7 +122,7 @@ gulp.task('image:build', function() {
 });
 
 // SPRITE
-gulp.task('sprite:build', function () {
+gulp.task('sprite:build', function() {
     var spriteData = gulp.src('src/images/sprite/*.png').pipe(spritesmith({
         retinaSrcFilter: ['src/images/sprite/*-2x.png'],
         retinaImgName: 'sprite-2x.png',
@@ -130,7 +131,7 @@ gulp.task('sprite:build', function () {
         cssName: '_sprite.scss',
         padding: 20,
         algorithm: 'diagonal',
-        imgPath: '../../images/sprite.png'
+        imgPath: '../images/sprite.png'
     }));
     spriteData.img.pipe(gulp.dest('src/images/'));
     spriteData.css.pipe(gulp.dest('src/sass/'));
