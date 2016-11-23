@@ -27,8 +27,9 @@ section {
 	max-width: 1440px;
 	height: 700px;
 	color: $white;
-	background: #ccc;
-	background: url("../images/promo__bg.jpg") no-repeat center;
+	background-color: #ccc;
+	background: url("../img/promo__bg.jpg") no-repeat fixed center ;
+
 }
 
 .header {
@@ -269,19 +270,19 @@ section {
 		border-radius: 50%;
 
 		&--1 {
-			background: url("../images/partner--1.jpg") no-repeat center;
+			background: url("../img/partner--1.jpg") no-repeat center;
 		}
 
 		&--2 {
-			background: url("../images/partner--2.jpg") no-repeat center;
+			background: url("../img/partner--2.jpg") no-repeat center;
 		}
 
 		&--3 {
-			background: url("../images/partner--3.jpg") no-repeat center;
+			background: url("../img/partner--3.jpg") no-repeat center;
 		}
 
 		&--4 {
-			background: url("../images/partner--4.jpg") no-repeat center;
+			background: url("../img/partner--4.jpg") no-repeat center;
 		}
 	}
 
